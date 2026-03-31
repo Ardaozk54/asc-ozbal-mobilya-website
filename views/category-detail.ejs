@@ -1,0 +1,40 @@
+<%- include("partials/head", { title }) %>
+<%- include("partials/navbar", { page }) %>
+
+<main>
+  <section class="page-hero small-hero">
+    <div class="container">
+      <h2><%= category.name %></h2>
+      <p><%= category.shortDescription %></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container category-detail-layout">
+      <div class="category-detail-image-box">
+        <img src="<%= category.image %>" alt="<%= category.name %>" class="category-detail-image" />
+      </div>
+
+      <div class="category-detail-content">
+        <p class="section-label">Kategori</p>
+        <h3><%= category.name %> Koleksiyonu</h3>
+        <p>
+          Bu sayfada ileride <%= category.name %> kategorisine ait ürünleri
+          listeleyebilirsin. Şimdilik bu alan kategoriye özel vitrin alanı
+          olarak kullanılabilir.
+        </p>
+
+        <ul class="detail-list">
+          <li>Özel ölçü ürünler eklenebilir</li>
+          <li>Ürün kartları kategori bazlı gösterilebilir</li>
+          <li>Görsel galeri ve açıklamalar eklenebilir</li>
+          <li>Teklif alma butonu eklenebilir</li>
+        </ul>
+
+        <a href="/contact" class="btn btn-primary">Bilgi Al</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>

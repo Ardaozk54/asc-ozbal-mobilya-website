@@ -1,0 +1,33 @@
+<%- include("partials/head", { title }) %>
+<%- include("partials/navbar", { page }) %>
+
+<main class="page-main">
+  <section class="page-hero small-hero">
+    <div class="container">
+      <h2>Ürünler</h2>
+      <p>Premium çizgiyle tasarlanmış mobilya koleksiyonlarımız.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        <% products.forEach(product => { %>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img src="<%= product.image %>" alt="<%= product.name %>" class="product-image" />
+              <div class="product-overlay">
+                <span><%= product.category %></span>
+              </div>
+            </div>
+
+            <h4><%= product.name %></h4>
+            <p><%= product.description %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>

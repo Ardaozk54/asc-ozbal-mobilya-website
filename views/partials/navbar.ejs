@@ -1,0 +1,39 @@
+<header class="header">
+  <div class="container nav">
+
+    <!-- SOL YAZI -->
+    <a href="/" class="brand-left">
+      <h1>ASC Özbal Mobilya</h1>
+      <p class="brand-text">Şıklığın ve kalitenin imzası</p>
+    </a>
+
+    <!-- ORTA LOGO -->
+    <a href="/" class="logo-center">
+      <img src="/images/logo/logo.png" alt="Logo" class="logo-main" />
+    </a>
+
+    <!-- SAĞ MENU -->
+    <nav>
+      <ul class="nav-links">
+        <li><a class="<%= page === 'home' ? 'active' : '' %>" href="/">Ana Sayfa</a></li>
+        <li><a class="<%= page === 'about' ? 'active' : '' %>" href="/about">Hakkımızda</a></li>
+
+        <li class="dropdown">
+          <a class="<%= page === 'categories' ? 'active' : '' %>" href="/categories">
+            Ürünler <span class="dropdown-arrow">▾</span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a href="/categories/yatak-odasi">Yatak Odası</a></li>
+            <li><a href="/categories/tv-unitesi">TV Ünitesi</a></li>
+            <li><a href="/categories/koltuk-takimi">Koltuk Takımı</a></li>
+            <li><a href="/categories/yemek-odasi-takimi">Yemek Odası Takımı</a></li>
+          </ul>
+        </li>
+
+        <li><a class="<%= page === 'contact' ? 'active' : '' %>" href="/contact">İletişim</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>

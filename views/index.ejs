@@ -1,0 +1,62 @@
+<%- include("partials/head", { title }) %>
+<%- include("partials/navbar", { page }) %>
+
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">Premium • Yenilikçi • Zamansız</span>
+      <h2>Yaşam alanlarınıza değer katan özel mobilya koleksiyonları</h2>
+      <p>
+        Logonuzun ruhunu taşıyan sıcak altın tonları ve modern tasarım diliyle,
+        estetik ve güven veren bir marka deneyimi sunuyoruz.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="/categories" class="btn btn-primary">Kategorileri İncele</a>
+        <a href="/contact" class="btn btn-secondary">Bize Ulaş</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="section-label center">Kategoriler</p>
+      <h3 class="center">Öne Çıkan Ürün Grupları</h3>
+
+      <div class="card-grid">
+        <% categories.forEach(category => { %>
+          <a href="/categories/<%= category.slug %>" class="category-card">
+            <div class="category-image-wrapper">
+              <img src="<%= category.image %>" alt="<%= category.name %>" class="category-image" />
+              <div class="category-overlay">
+                <span><%= category.name %></span>
+              </div>
+            </div>
+
+            <div class="category-card-content">
+              <h4><%= category.name %></h4>
+              <p><%= category.shortDescription %></p>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <section class="section showcase-section">
+    <div class="container showcase-box">
+      <div>
+        <p class="section-label">Kurumsal Kimlik</p>
+        <h3>Sıcak tonlar, güçlü detaylar, premium duruş</h3>
+        <p>
+          Asc Özbal Mobilya için hazırlanan bu yapı, markanın güven veren ve
+          estetik yönünü dijitalde güçlü şekilde yansıtmak için tasarlanmıştır.
+        </p>
+      </div>
+
+      <a href="/about" class="btn btn-primary">Daha Fazla Bilgi</a>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>

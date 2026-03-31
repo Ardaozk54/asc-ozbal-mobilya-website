@@ -1,0 +1,32 @@
+<%- include("partials/head", { title }) %>
+<%- include("partials/navbar", { page }) %>
+
+<main class="page-main">
+  <section class="page-hero small-hero">
+    <div class="container">
+      <h2>İletişim</h2>
+      <p>Bizimle iletişime geçin, size uygun çözümleri birlikte planlayalım.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-column">
+      <div>
+        <h3>İletişim Bilgileri</h3>
+        <p><strong>Telefon:</strong> +90 5xx xxx xx xx</p>
+        <p><strong>E-posta:</strong> info@ascozbalmobilya.com</p>
+        <p><strong>Adres:</strong> Ankara / Türkiye</p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Ad Soyad" />
+        <input type="email" placeholder="E-posta" />
+        <input type="text" placeholder="Telefon" />
+        <textarea rows="6" placeholder="Mesajınız"></textarea>
+        <button type="submit" class="btn btn-primary">Gönder</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
