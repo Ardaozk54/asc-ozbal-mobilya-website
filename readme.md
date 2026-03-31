@@ -21,6 +21,14 @@ A premium furniture website project built with Node.js, Express, EJS, HTML, CSS,
 ## Project Status
 This project is currently in progress.
 
+## 🚀 Preview
+
+![Website Preview](./screenshots/1.png)
+![Website Preview](./screenshots/2.png)
+![Website Preview](./screenshots/3.png)
+
+
+
 ## Installation
 ```bash
 npm install
